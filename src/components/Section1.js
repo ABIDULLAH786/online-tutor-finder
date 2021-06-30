@@ -1,5 +1,5 @@
 import React from "react";
-import "/src/css/style.css";
+import "../css/style.css";
 export default function Section_1() {
     return (
         <div className="App Section1">

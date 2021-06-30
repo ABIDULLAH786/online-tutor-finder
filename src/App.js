@@ -1,14 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-import Navbar from './components/Navbar';
-
+import Header from "./components/header";
+import Form from "./components/form";
+import Footer from "./components/footer";
+import React from "react";
+import {Container} from "react-bootstrap";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Navbar />
-      </header>
-    </div>
+    <>
+        <Header />
+
+      <Container>
+        <Form />
+      </ Container>
+
+        <Footer />
+     
+    </>
   );
 }
 
