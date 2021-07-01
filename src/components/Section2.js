@@ -39,7 +39,6 @@ export default function Section2() {
                     <Col md={{ span: 4 }}>
                         <Card className="text-center">
                             <i class="bi bi-people-fill" style={{fontSize: 100}}></i>
-
                             <Card.Body>
                                 <Card.Title> 1:1 learning </Card.Title>
                                 <Card.Text>
