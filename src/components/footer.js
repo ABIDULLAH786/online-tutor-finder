@@ -4,7 +4,8 @@ import { Footer } from "react-bootstrap";
 import { Card } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import { SocialIcon } from "react-social-icons";
-// import "../Styles/styles.css";
+import "../css/style.css";
+
 
 class Foot extends React.Component {
   render() {
@@ -12,8 +13,8 @@ class Foot extends React.Component {
       <>
         <footer className="page-footer font-small blue pt-4 bg-dark footerText">
           <div className="container-fluid text-center text-md-left">
-            <div className="row ">
-              <div className="col-md-6 mt-md-0 mt-3 ">
+            <div className="row">
+              <div className="col-md-4 mt-md-0 mt-3 pl-5">
                 <span className="center">
                   <h5 className="text-uppercase">Stay Connected</h5>
                   <Button variant="info">Contect Us</Button>
@@ -47,7 +48,7 @@ class Foot extends React.Component {
 
               <hr className="clearfix w-100 d-md-none pb-0" />
 
-              <div className="col-md-3 mb-md-0 mb-3">
+              <div className="col-md-3 offset-1 mb-md-0 mb-3">
                 <h5 className="text-uppercase">Tutors</h5>
                 <ul className="list-unstyled">
                   <li>
@@ -62,11 +63,11 @@ class Foot extends React.Component {
                 </ul>
               </div>
 
-              <div className="col-md-3 mb-md-0 mb-3">
-                <h5 className="text-uppercase">Students</h5>
+              <div className="col-md-3 offset-1 mb-md-0 mb-3">
+                <h5 className="text-uppercase ">Students</h5>
                 <ul className="list-unstyled">
                   <li>
-                    <a href="#!">Student Signup</a>
+                    <a href={"/login"}>Student Signup</a>
                   </li>
                   <li>
                     <a href="#!">Student FAQs</a>
