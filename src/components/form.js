@@ -3,6 +3,7 @@ import { Form } from "react-bootstrap";
 import React from "react";
 
 export default class MyForm extends React.Component {
+<<<<<<< HEAD
   render() {
     return (
       <>
@@ -12,6 +13,21 @@ export default class MyForm extends React.Component {
               <Form.Label>Email</Form.Label>
               <Form.Control type="email" placeholder="Enter email" />
             </Form.Group>
+=======
+    render() {
+        return (
+            <>
+                <Form className="offset-3 col-md-6 ">
+                    <h1 className="textCenter">Register Your Selfe</h1>
+                    <Form.Group as={Row} controlId="formFirstName">
+                        <Form.Label column md="3">
+                            First Name
+                        </Form.Label>
+                        <Col>
+                            <Form.Control placeholder="First Name" />
+                        </Col>
+                    </Form.Group>
+>>>>>>> parent of 99f902a (Login signup and request page done)
 
             <Form.Group controlId="formGridPassword">
               <Form.Label>Password</Form.Label>
@@ -53,6 +69,7 @@ export default class MyForm extends React.Component {
             <Form.Check type="checkbox" label="Check me out" />
           </Form.Group>
 
+<<<<<<< HEAD
           <Button variant="primary" type="submit">
             Submit
           </Button>
@@ -61,4 +78,15 @@ export default class MyForm extends React.Component {
       </>
     );
   }
+=======
+                   
+                    <Button variant="primary" type="submit">
+                        Submit
+                    </Button>
+                </Form>
+                ;
+            </>
+        );
+    }
+>>>>>>> parent of 99f902a (Login signup and request page done)
 }

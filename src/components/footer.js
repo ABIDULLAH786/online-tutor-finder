@@ -4,7 +4,12 @@ import { Footer } from "react-bootstrap";
 import { Card } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import { SocialIcon } from "react-social-icons";
+<<<<<<< HEAD
 // import "../Styles/styles.css";
+=======
+import "../css/style.css";
+
+>>>>>>> parent of 99f902a (Login signup and request page done)
 
 class Foot extends React.Component {
   render() {
@@ -66,7 +71,11 @@ class Foot extends React.Component {
                 <h5 className="text-uppercase">Students</h5>
                 <ul className="list-unstyled">
                   <li>
+<<<<<<< HEAD
                     <a href="#!">Student Signup</a>
+=======
+                    <a href={"/login"}>Student Signup</a>
+>>>>>>> parent of 99f902a (Login signup and request page done)
                   </li>
                   <li>
                     <a href="#!">Student FAQs</a>

@@ -32,9 +32,15 @@ class MyNavBar extends React.Component {
 
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">
+<<<<<<< HEAD
                             <Nav.Link href="#viewData">Home</Nav.Link>
                             <Nav.Link href="#viewData">For Sudentd</Nav.Link>
                             <Nav.Link href="#viewData">For Tutor</Nav.Link>
+=======
+                            <Nav.Link href="#">Home</Nav.Link>
+                            <Nav.Link href="#">Request A tutor</Nav.Link>
+                            <Nav.Link href="#">For Tutor</Nav.Link>
+>>>>>>> parent of 99f902a (Login signup and request page done)
                         </Nav>
                     </Navbar.Collapse>
 
