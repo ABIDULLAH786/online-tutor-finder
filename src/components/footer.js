@@ -1,9 +1,10 @@
 import React from "react";
 // https://gist.github.com/Luke-zhang-04/7cb523899ca4044f805f0d0909e4c5c1
+import { Footer } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import { SocialIcon } from "react-social-icons";
 import "../css/style.css";
-import { Link } from "react-router-dom";
 
 
 class Foot extends React.Component {
@@ -51,13 +52,13 @@ class Foot extends React.Component {
                 <h5 className="text-uppercase">Tutors</h5>
                 <ul className="list-unstyled">
                   <li>
-                    <Link to="/become-a-tutor">Become a Tutor</Link>
+                    <a href="#!">Become a Tutor</a>
                   </li>
-                  {/* <li>
-                    <a href="#!">Online Tutoring Jobs</a>
-                  </li> */}
                   <li>
-                    <Link to="/tutor-faqs">Tutor FAQs</Link>
+                    <a href="#!">Online Tutoring Jobs</a>
+                  </li>
+                  <li>
+                    <a href="#!">Tutor FAQs</a>
                   </li>
                 </ul>
               </div>
@@ -66,10 +67,10 @@ class Foot extends React.Component {
                 <h5 className="text-uppercase ">Students</h5>
                 <ul className="list-unstyled">
                   <li>
-                    <Link to={"/registration"}>Student Signup</Link>
+                    <a href={"/login"}>Student Signup</a>
                   </li>
                   <li>
-                    <Link to="/student-faqs">Student FAQs</Link>
+                    <a href="#!">Student FAQs</a>
                   </li>
                 </ul>
               </div>

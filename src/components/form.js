@@ -1,5 +1,4 @@
 import { Button } from "react-bootstrap";
-import { Container } from "react-bootstrap";
 import { Form } from "react-bootstrap";
 import { Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
@@ -10,8 +9,8 @@ export default class MyForm extends React.Component {
     render() {
         return (
             <>
-                {/* <Container className="block-example border border-dark"> */}
-                <Form className="offset-3 col-md-6 block-example border border-dark p-4 rounded  " >
+                <Form className="offset-3 col-md-6 ">
+                    <h1 className="textCenter">Register Your Selfe</h1>
                     <Form.Group as={Row} controlId="formFirstName">
                         <Form.Label column md="3">
                             First Name
@@ -76,7 +75,6 @@ export default class MyForm extends React.Component {
                         Submit
                     </Button>
                 </Form>
-                {/* </Container> */}
                 ;
             </>
         );

@@ -1,37 +1,26 @@
-import Section1 from "./components/Section1";
+import Header from "./components/header";
 import Section2 from "./components/Section2";
 import Footer from "./components/footer";
 import React from "react";
+import {Container} from "react-bootstrap";
 
-import Home from "./pages/home";
-import Login from "./pages/login.js";
-import Signup from "./pages/signup.js";
-import Request from "./pages/request.js";
-import StudentFaqs from "./pages/studentFaqs.js";
-import TeacherFaqs from "./pages/teacherFaqs.js";
-
-import {
-  Switch,
-  Route,
-} from "react-router-dom";
+import Section1 from "./components/Section1";
+// import Form from "./components/form.js";
+// import Login from "./components/login.js";
 
 function App() {
   return (
     <>
-      <Switch>
+        <Header />
+        {/* <Form /> */}
+        <Section1 />
+      <Container>
         
-         <Route exact path="/" component={Home} />
-         <Route exact path="/section1" component={Section1} />
-         <Route exact path="/footer" component={Footer} />
-         <Route exact path="/login" component={Login} />
-         <Route exact path="/section2" component={Section2} />
-         <Route exact path="/request-a-tutor" component={Request} />
-         <Route exact path="/become-a-tutor" component={Signup} />
-         <Route exact path="/registration" component={Signup} />
-         <Route exact path="/student-faqs" component={StudentFaqs} />
-         <Route exact path="/tutor-faqs" component={TeacherFaqs} />
-       
-        </Switch>
+        <Section2 />
+      </ Container>
+
+        <Footer />
+     
     </>
   );
 }

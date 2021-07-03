@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import { Nav } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
 import { Form } from "react-bootstrap";
 
@@ -14,23 +13,40 @@ class MyNavBar extends React.Component {
         return (
             <div>
                 <Navbar bg="dark" variant="dark">
-                    <Link to="/">
-                        <Navbar.Brand>
-                            {"Online Tutor Finder"}
-                        </Navbar.Brand>
-                    </Link>
+                    <Navbar.Brand href="#home">
+                        {/* <img
+              alt="logo"
+              src={"https://www.tutorhunt.com/images/logo.png"}
+              width="320"
+              height="70"
+              className="d-inline-block align-center"
+            /> */}
+                        {"Online Tutor Finder"}
+                    </Navbar.Brand>
+
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="mr-auto ">
-                            <Link to="/" className="ml-5 mr-4">Home</Link>
-                            <Link to="/request-a-tutor" className="mr-4">Request A tutor</Link>
-                            <Link to="/become-a-tutor" className="mr-4">Become A Tutor</Link>
+                        <Nav className="mr-auto">
+                            <Nav.Link href="#">Home</Nav.Link>
+                            <Nav.Link href="#">Request A tutor</Nav.Link>
+                            <Nav.Link href="#">For Tutor</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
 
+                    {/* <OverlayTrigger
+            placement="right-start"
+            delay={{ show: 250, hide: 400 }}
+            overlay={renderTooltip}
+          > */}
+
                     <Navbar.Collapse className="justify-content-end">
                         <Form inline>
+                            {/* <FormControl
+                type="text"
+                placeholder="Search"
+                className="mr-sm-2"
+              /> */}
                             <Button className="mr-4" variant="outline-success">
                                 Login
                             </Button>
@@ -39,6 +55,7 @@ class MyNavBar extends React.Component {
                             </Button>
                         </Form>
                     </Navbar.Collapse>
+                    {/* </OverlayTrigger> */}
                 </Navbar>
             </div>
         );
