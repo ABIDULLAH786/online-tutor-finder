@@ -3,12 +3,9 @@
     text-align: center;
 }
 
-.section1 {
-    height: 100%;
-    background-color: antiquewhite;
+.footerText{
+    color:aliceblue;
 }
-<<<<<<< HEAD
-=======
 .whiteText{
     color:aliceblue;
 }
@@ -17,7 +14,9 @@
     text-align: center;
 
 }
-
+.nuneDecuration{
+    text-decoration: none;
+}
 .underLine{
     color: darkorange;
     font-weight:bolder;
@@ -36,4 +35,3 @@
     
     padding: 7% 0;
 }
->>>>>>> parent of 99f902a (Login signup and request page done)
