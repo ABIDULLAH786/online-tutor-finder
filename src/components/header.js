@@ -3,10 +3,14 @@ import Navbar from "react-bootstrap/Navbar";
 import { Nav } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import { Form } from "react-bootstrap";
+import { FormControl } from "react-bootstrap";
+import { NavDropdown } from "react-bootstrap";
 
 // import Overlay from "react-bootstrap/Overlay";
 // import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 // import renderTooltip from "./tooltip.js";
+
+import Section_1 from "./Section1";
 
 class MyNavBar extends React.Component {
     render() {
@@ -28,9 +32,9 @@ class MyNavBar extends React.Component {
 
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">
-                            <Nav.Link href="#">Home</Nav.Link>
-                            <Nav.Link href="#">Request A tutor</Nav.Link>
-                            <Nav.Link href="#">For Tutor</Nav.Link>
+                            <Nav.Link href="#viewData">Home</Nav.Link>
+                            <Nav.Link href="#viewData">For Sudentd</Nav.Link>
+                            <Nav.Link href="#viewData">For Tutor</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
 
@@ -57,6 +61,10 @@ class MyNavBar extends React.Component {
                     </Navbar.Collapse>
                     {/* </OverlayTrigger> */}
                 </Navbar>
+
+                <div>
+                    <Section_1 />
+                </div>
             </div>
         );
     }

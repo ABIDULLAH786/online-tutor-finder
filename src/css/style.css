@@ -3,33 +3,7 @@
     text-align: center;
 }
 
-.footerText{
-    color:aliceblue;
-}
-.whiteText{
-    color:aliceblue;
-}
-
-.textCenter{
-    text-align: center;
-
-}
-
-.underLine{
-    color: darkorange;
-    font-weight:bolder;
-    text-decoration: line-through;
-    text-decoration-line: overline;
-
-}
-
-.inner-page-banner{
-    background: url("https://www.tutorfinder.co.uk/assets/images/inner-banner.jpg") no-repeat center center;
-    background-size:cover;
-    height: 500px;
-    /* width: 1200px;*/
-    /* height: 500px;  */
-    /* background-size: auto; */
-    
-    padding: 7% 0;
+.section1 {
+    height: 100%;
+    background-color: antiquewhite;
 }
