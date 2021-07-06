@@ -10,39 +10,43 @@ import { Form } from "react-bootstrap";
 // import renderTooltip from "./tooltip.js";
 
 class MyNavBar extends React.Component {
-    render() {
-        return (
-            <div>
-                <Navbar bg="dark" variant="dark">
-                    <Link to="/">
-                        <Navbar.Brand>
-                            {"Online Tutor Finder"}
-                        </Navbar.Brand>
-                    </Link>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+  render() {
+    return (
+      <div>
+        <Navbar bg="dark" variant="dark">
+          <Link to="/">
+            <Navbar.Brand>{"Online Tutor Finder"}</Navbar.Brand>
+          </Link>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="mr-auto ">
-                            <Link to="/" className="ml-5 mr-4">Home</Link>
-                            <Link to="/request-a-tutor" className="mr-4">Request A tutor</Link>
-                            <Link to="/become-a-tutor" className="mr-4">Become A Tutor</Link>
-                        </Nav>
-                    </Navbar.Collapse>
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="mr-auto ">
+              <Link to="/" className="ml-5 mr-4">
+                Home
+              </Link>
+              <Link to="/request-a-tutor" className="mr-4">
+                Request A tutor
+              </Link>
+              <Link to="/become-a-tutor" className="mr-4">
+                Become A Tutor
+              </Link>
+            </Nav>
+          </Navbar.Collapse>
 
-                    <Navbar.Collapse className="justify-content-end">
-                        <Form inline>
-                            <Button className="mr-4" variant="outline-success">
-                                Login
-                            </Button>
-                            <Button className="mr-4" variant="outline-success">
-                                Register
-                            </Button>
-                        </Form>
-                    </Navbar.Collapse>
-                </Navbar>
-            </div>
-        );
-    }
+          <Navbar.Collapse className="justify-content-end">
+            <Form inline>
+              <Button className="mr-4" variant="outline-success">
+                <Link to="/dashboard">Login</Link>
+              </Button>
+              <Button className="mr-4" variant="outline-success">
+                <Link to="/dashboard">Register</Link>
+              </Button>
+            </Form>
+          </Navbar.Collapse>
+        </Navbar>
+      </div>
+    );
+  }
 }
 
 export default MyNavBar;
