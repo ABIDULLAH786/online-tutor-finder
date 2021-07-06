@@ -5,7 +5,6 @@ import { SocialIcon } from "react-social-icons";
 import "../css/style.css";
 import { Link } from "react-router-dom";
 
-
 class Foot extends React.Component {
   render() {
     return (
