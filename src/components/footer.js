@@ -9,7 +9,7 @@ class Foot extends React.Component {
   render() {
     return (
       <>
-        <footer className="page-footer font-small blue pt-4 bg-dark footerText">
+        <footer className="page-footer font-small blue pt-4 bg-dark whiteText">
           <div className="container-fluid text-center text-md-left">
             <div className="row">
               <div className="col-md-4 mt-md-0 mt-3 pl-5">

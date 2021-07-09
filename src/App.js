@@ -24,7 +24,7 @@ function App() {
         <Route exact path="/section2" component={Section2} />
         <Route exact path="/request-a-tutor" component={Request} />
         <Route exact path="/become-a-tutor" component={Signup} />
-        <Route exact path="/registration" component={Signup} />
+        <Route exact path="/signup" component={Signup} />
         <Route exact path="/student-faqs" component={StudentFaqs} />
         <Route exact path="/tutor-faqs" component={TeacherFaqs} />
         <Route exact path="/dashboard" component={Dashboard} />

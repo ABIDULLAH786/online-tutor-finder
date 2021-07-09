@@ -36,10 +36,10 @@ class MyNavBar extends React.Component {
           <Navbar.Collapse className="justify-content-end">
             <Form inline>
               <Button className="mr-4" variant="outline-success">
-                <Link to="/dashboard">Login</Link>
+                <Link to="/login"> Login </Link>
               </Button>
               <Button className="mr-4" variant="outline-success">
-                <Link to="/dashboard">Register</Link>
+                <Link to="/signup"> Register </Link>
               </Button>
             </Form>
           </Navbar.Collapse>
