@@ -10,6 +10,7 @@ import BarChartIcon from "@material-ui/icons/BarChart";
 import LayersIcon from "@material-ui/icons/Layers";
 import AssignmentIcon from "@material-ui/icons/Assignment";
 import { Link } from "react-router-dom";
+// import FacebookIcon from '@material-ui/icons/Facebook';
 
 export const mainListItems = (
   <div>
@@ -24,7 +25,7 @@ export const mainListItems = (
       <ListItemIcon>
         <ShoppingCartIcon />
       </ListItemIcon>
-      <Link to="edit-profile">
+      <Link to="/edit-profile">
         <ListItemText primary="My Profile" />
       </Link>
     </ListItem>
@@ -32,13 +33,17 @@ export const mainListItems = (
       <ListItemIcon>
         <PeopleIcon />
       </ListItemIcon>
-      <ListItemText primary="Account" />
+      <Link to="/edit-profile">
+        <ListItemText primary="Account" />
+      </Link>
     </ListItem>
     <ListItem button>
       <ListItemIcon>
         <BarChartIcon />
       </ListItemIcon>
-      <ListItemText primary="My Subject" />
+      <Link to="/my-subjects">
+        <ListItemText primary="My Subjects" />
+      </Link>
     </ListItem>
     <ListItem button>
       <ListItemIcon>
@@ -51,10 +56,10 @@ export const mainListItems = (
 
 export const secondaryListItems = (
   <div>
-    <ListSubheader inset>Saved reports</ListSubheader>
+    <ListSubheader inset>Our Social Sites</ListSubheader>
     <ListItem button>
       <ListItemIcon>
-        <AssignmentIcon />
+        {/* <FacebookIcon /> */}
       </ListItemIcon>
       <ListItemText primary="Facebook" />
     </ListItem>

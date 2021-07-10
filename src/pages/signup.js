@@ -6,9 +6,9 @@ export default function Signup() {
   return (
     <>
       <Header />
-      <h1 className="textCenter">Register Your Selfe</h1>
+        <h1 className="textCenter mt-5">Register Your Selfe</h1>
 
-      <Form />
+        <Form />
       <Footer />
     </>
   );

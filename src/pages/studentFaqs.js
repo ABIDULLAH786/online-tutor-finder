@@ -6,9 +6,9 @@ import React, { useContext} from "react";
 import "../css/style.css";
 
 export default class MyForm extends React.Component {
-    render() { 
+    render() {
         return (
-            <> 
+            <>
                 <Header />
                 <Container className="mt-5 w-50 mb-5" >
                 </Container>
