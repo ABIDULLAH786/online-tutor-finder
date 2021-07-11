@@ -23,16 +23,17 @@ export default function Section2() {
                         />
                     </Col>
                 </Row>
-                <Button variant="success" type="submit" size="lg" className="w-100" >
+                {/*<Button variant="success" type="submit" size="lg" className="w-100" >
                     <Link to="/s/home" >
                         Dashboard
                     </Link>
                 </Button>
-                <Row className="justify-content-md-center">
+*/}                <Row className="justify-content-md-center">
                     <Col md={{ span: 4 }}>
                         <Card className="text-center">
-                            <i class="bi bi-camera-reels-fill" style={{ fontSize: 100 }}></i>
-
+                            <i class="fas fa-laptop-code"></i>
+                            {/* <i class="bi bi-camera-reels-outline" style={{ fontSize: 100 }}></i> */}
+                            {/* <LaptopWindowsIcon style={{ fontSize: 100 }} /> */}
                             {/* <Card.Img  src="https://www.tutorfinder.co.uk/assets/images/learning.png" /> */}
                             <Card.Body>
                                 <Card.Title> Online lessons </Card.Title>

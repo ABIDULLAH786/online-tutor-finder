@@ -6,7 +6,6 @@ import React from "react";
 import Home from "./pages/home";
 import Login from "./pages/login.js";
 import Signup from "./pages/signup.js";
-import Signup2 from "./pages/registration.js";
 import Request from "./pages/request.js";
 import TutorDashboard from "./TutuorDashboard/TutorDashboard.js";
 import TutorProfile from "./TutuorDashboard/TutorProfile";

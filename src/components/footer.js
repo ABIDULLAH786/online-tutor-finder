@@ -76,7 +76,7 @@ class Foot extends React.Component {
           </div>
 
           <div className="footer-copyright text-center py-3">
-            © 2020 Copyright: Web Semester Project BSCS-VI
+            © 2021 Copyright: Web Semester Project BSCS-VI
           </div>
         </footer>
       </>

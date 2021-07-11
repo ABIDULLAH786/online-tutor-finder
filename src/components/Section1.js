@@ -4,6 +4,7 @@ import { Form } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import { Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 // import { FloatingLabel } from "react-bootstrap";
 // import FloatingLabel from "react-bootstrap-floating-label";
 import "../css/style.css";
@@ -32,7 +33,7 @@ export default function Section1() {
                             </Col>
                             <Col md={3}>
                                 <Button variant="success" type="submit" size="lg" >
-                                    Find
+                                <Link to="/">    Find </Link>
                                 </Button>
                             </Col>
                         </Row>
