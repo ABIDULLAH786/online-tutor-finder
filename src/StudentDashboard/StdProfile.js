@@ -1,3 +1,5 @@
+import { Form, Button} from 'react-bootstrap'
+
 import React from "react";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
@@ -14,27 +16,13 @@ import Badge from "@material-ui/core/Badge";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
-import Link from "@material-ui/core/Link";
+import UiLink from "@material-ui/core/Link";
 import MenuIcon from "@material-ui/icons/Menu";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import NotificationsIcon from "@material-ui/icons/Notifications";
-import { mainListItems, secondaryListItems } from "./listItems";
-import Profile from "../components/TutorProfile";
-import Account from "../components/StdAccount";
-import Header from "../components/header";
+import { mainListItems, secondaryListItems } from "./StdListItems";
+import { BrowserRouter as Router, Route, Link , useRouteMatch} from "react-router-dom";
 
-function Copyright() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {"Copyright © "}
-      <Link color="inherit" href="https://material-ui.com/">
-        Your Website
-      </Link>{" "}
-      {new Date().getFullYear()}
-      {"."}
-    </Typography>
-  );
-}
 
 const drawerWidth = 240;
 
@@ -118,6 +106,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Dashboard() {
+  let match = useRouteMatch();
   const classes = useStyles();
   const [open, setOpen] = React.useState(true);
   const handleDrawerOpen = () => {
@@ -159,13 +148,8 @@ export default function Dashboard() {
             noWrap
             className={classes.title}
           >
-            Dashboard
+            Update Profile
           </Typography>
-          <IconButton color="inherit">
-            <Badge badgeContent={4} color="secondary">
-              <NotificationsIcon />
-            </Badge>
-          </IconButton>
         </Toolbar>
       </AppBar>
       <Drawer
@@ -192,29 +176,31 @@ export default function Dashboard() {
             {/* Profile */}
             <Grid item xs={12} md={12} lg={20} >
               <Paper className={fixedHeightPaper}>
-                <Profile />
-              </Paper>
-            </Grid>
-            {/* Recent Deposits */}
-            {/* <Grid item xs={12} md={4} lg={3}> */}
-              {/* <Paper className={fixedHeightPaper}> */}
-                {/* <Deposits /> */}
-              {/* </Paper> */}
-            {/* </Grid> */}
-
-            {/* Recent Account */}
-            <Grid item xs={12}>
-              <Paper className={classes.paper}>
-                {/* <Account /> */}
+                <StdProfile />
               </Paper>
             </Grid>
           </Grid>
-          <Box pt={4}>
-            <Copyright />
-          </Box>
         </Container>
       </main>
     </div>
     </>
   );
+}
+
+function StdProfile() {
+
+    return (
+        <>
+            {/* <h2>Update Profile</h2> */}
+            <Form.Group controlId="exampleForm.ControlTextarea1" className="mb-5 mt-2">
+                <Form.Label >Comment About Tution You Are Looking For:</Form.Label>
+                <Form.Control as="textarea" rows={6} />
+            </Form.Group>
+            <Form.Group controlId="exampleForm.ControlTextarea1" className="mb-5">
+                <Form.Label >Your Availability:</Form.Label>
+                <Form.Control as="textarea" rows={6} />
+            </Form.Group>
+            <Button variant="primary" className="offset-3 w-50" size="lg">Save</Button>
+        </>
+    );
 }

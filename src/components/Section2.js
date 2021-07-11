@@ -24,7 +24,7 @@ export default function Section2() {
                     </Col>
                 </Row>
                 <Button variant="success" type="submit" size="lg" className="w-100" >
-                    <Link to="/dashboard/t" >
+                    <Link to="/s/home" >
                         Dashboard
                     </Link>
                 </Button>

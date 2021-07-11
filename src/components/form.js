@@ -64,9 +64,9 @@ export default class MyForm extends React.Component {
             </Form.Group>
 
             <Form.Group as={Col} controlId="formGridZip">
-              <Form.Label>Account Type</Form.Label>
+              <Form.Label>Select Status</Form.Label>
               <Form.Control as="select" placeholder="Select Subject">
-                <option>Select Account Type </option>
+                <option>Status</option>
                 <option>Student</option>
                 <option>Tutor</option>
               </Form.Control>

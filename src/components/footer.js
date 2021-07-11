@@ -22,21 +22,21 @@ class Foot extends React.Component {
                     {/* style={{ height: 25, width: 25 }} */}
                     <SocialIcon
                       className="mr-2"
-                      url="https://linkedin.com/in/jaketrent"
+                      url="linkedin.com"
                       style={{ height: 30, width: 30 }}
                     />
                     <SocialIcon
                       className="mr-2"
-                      url="https://facebook.com/in/jaketrent"
+                      url="https://www.facebook.com/TEKMentor/"
                       style={{ height: 30, width: 30 }}
                     />
                     <SocialIcon
                       className="mr-2"
-                      url="https://twitter.com/in/jaketrent"
+                      url="https://twitter.com/home"
                       style={{ height: 30, width: 30 }}
                     />
                     <SocialIcon
-                      url="https://github.com/in/jaketrent"
+                      url="https://github.com/ABIDULLAH786"
                       style={{ height: 30, width: 30 }}
                       bgColor="#ff5a01"
                     />

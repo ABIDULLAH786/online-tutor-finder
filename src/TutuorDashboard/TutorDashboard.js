@@ -14,25 +14,22 @@ import Badge from "@material-ui/core/Badge";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
-import Link from "@material-ui/core/Link";
+import UiLink from "@material-ui/core/Link";
 import MenuIcon from "@material-ui/icons/Menu";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import { mainListItems, secondaryListItems } from "./listItems";
-import Chart from "./Chart";
-import Deposits from "./Deposits";
-import Orders from "./Orders";
-import Profile from "../components/StdProfile";
-import Account from "../components/StdAccount";
-import Header from "../components/header";
+
+import { BrowserRouter as Router, Route, Link , useRouteMatch} from "react-router-dom";
+
 
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {"Copyright © "}
-      <Link color="inherit" href="https://material-ui.com/">
+      <UiLink color="inherit" href="https://material-ui.com/">
         Your Website
-      </Link>{" "}
+      </UiLink>{" "}
       {new Date().getFullYear()}
       {"."}
     </Typography>
@@ -121,6 +118,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Dashboard() {
+  let match = useRouteMatch();
   const classes = useStyles();
   const [open, setOpen] = React.useState(true);
   const handleDrawerOpen = () => {
@@ -195,20 +193,7 @@ export default function Dashboard() {
             {/* Profile */}
             <Grid item xs={12} md={12} lg={20} >
               <Paper className={fixedHeightPaper}>
-                <Profile />
-              </Paper>
-            </Grid>
-            {/* Recent Deposits */}
-            {/* <Grid item xs={12} md={4} lg={3}> */}
-              {/* <Paper className={fixedHeightPaper}> */}
-                {/* <Deposits /> */}
-              {/* </Paper> */}
-            {/* </Grid> */}
-
-            {/* Recent Account */}
-            <Grid item xs={12}>
-              <Paper className={classes.paper}>
-                <Account />
+                  {/* {callComponent(match.url)} */}
               </Paper>
             </Grid>
           </Grid>
@@ -221,3 +206,5 @@ export default function Dashboard() {
     </>
   );
 }
+
+

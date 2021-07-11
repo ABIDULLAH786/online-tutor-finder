@@ -10,7 +10,9 @@ import BarChartIcon from "@material-ui/icons/BarChart";
 import LayersIcon from "@material-ui/icons/Layers";
 import AssignmentIcon from "@material-ui/icons/Assignment";
 import { Link } from "react-router-dom";
-// import FacebookIcon from '@material-ui/icons/Facebook';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import YouTubeIcon from '@material-ui/icons/YouTube';
 
 export const mainListItems = (
   <div>
@@ -18,14 +20,15 @@ export const mainListItems = (
       <ListItemIcon>
         <DashboardIcon />
       </ListItemIcon>
-
-      <ListItemText primary="Dashboard" />
+      <Link to="/t/home">
+        <ListItemText primary="Dashboard" />
+      </Link>
     </ListItem>
     <ListItem button>
       <ListItemIcon>
         <ShoppingCartIcon />
       </ListItemIcon>
-      <Link to="/edit-profile">
+      <Link to="/t/edit-profile">
         <ListItemText primary="My Profile" />
       </Link>
     </ListItem>
@@ -33,7 +36,7 @@ export const mainListItems = (
       <ListItemIcon>
         <PeopleIcon />
       </ListItemIcon>
-      <Link to="/edit-profile">
+      <Link to="/t/account-info">
         <ListItemText primary="Account" />
       </Link>
     </ListItem>
@@ -41,7 +44,7 @@ export const mainListItems = (
       <ListItemIcon>
         <BarChartIcon />
       </ListItemIcon>
-      <Link to="/my-subjects">
+      <Link to="/t/my-subjects">
         <ListItemText primary="My Subjects" />
       </Link>
     </ListItem>
@@ -59,15 +62,27 @@ export const secondaryListItems = (
     <ListSubheader inset>Our Social Sites</ListSubheader>
     <ListItem button>
       <ListItemIcon>
-        {/* <FacebookIcon /> */}
+        <FacebookIcon />
       </ListItemIcon>
-      <ListItemText primary="Facebook" />
+      <a href="https://www.facebook.com/TEKMentor/">
+        <ListItemText primary="Facebook" />
+      </a>
     </ListItem>
     <ListItem button>
       <ListItemIcon>
-        <AssignmentIcon />
+        <GitHubIcon />
       </ListItemIcon>
-      <ListItemText primary="GitHub" />
+      <a href="https://github.com/ABIDULLAH786">
+        <ListItemText primary="GitHub" />
+      </a>
+    </ListItem>
+    <ListItem button>
+      <ListItemIcon>
+        <YouTubeIcon />
+      </ListItemIcon>
+      <a href="https://www.youtube.com/channel/UCnexCMwVHYgBFzPqyyDuZkg">
+        <ListItemText primary="Youtube" />
+      </a>
     </ListItem>
   </div>
 );

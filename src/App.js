@@ -8,11 +8,15 @@ import Login from "./pages/login.js";
 import Signup from "./pages/signup.js";
 import Signup2 from "./pages/registration.js";
 import Request from "./pages/request.js";
-import StudentFaqs from "./pages/studentFaqs.js";
-import TeacherFaqs from "./pages/teacherFaqs.js";
-import Dashboard from "./dashboard/Dashboard.js";
-import StdDashboard from "./dashboard/StdDashboard.js";
-import TutorDashboard from "./dashboard/TutorDashboard.js";
+import TutorDashboard from "./TutuorDashboard/TutorDashboard.js";
+import TutorProfile from "./TutuorDashboard/TutorProfile";
+import TutorAccount from "./TutuorDashboard/TutorAccount";
+import TutorSubjects from "./TutuorDashboard/TutorSubjects";
+
+import StdDashboard from "./StudentDashboard/StdDashboard.js";
+import StdProfile from "./StudentDashboard/StdProfile";
+import StdAccount from "./StudentDashboard/StdAccount";
+import StdSubjects from "./StudentDashboard/StdSubjects";
 
 import { Switch, Route } from "react-router-dom";
 
@@ -29,11 +33,19 @@ function App() {
         <Route exact path="/become-a-tutor" component={Signup} />
         <Route exact path="/signup" component={Signup} />
         {/* <Route exact path="/signup" component={Signup2} /> */}
-        <Route exact path="/student-faqs" component={StudentFaqs} />
-        <Route exact path="/tutor-faqs" component={TeacherFaqs} />
-        <Route exact path="/dashboard" component={Dashboard} />
-        <Route exact path="/dashboard/s" component={StdDashboard} />
-        <Route exact path="/dashboard/t" component={TutorDashboard} />
+       
+        <Route exact path="/t/home" component={TutorDashboard} />
+        <Route exact path="/t/edit-profile" component={TutorProfile} />
+        <Route exact path="/t/account-info" component={TutorAccount} />
+        <Route exact path="/t/my-subjects" component={TutorSubjects} />
+
+        <Route exact path="/s/home" component={StdDashboard} />
+        <Route exact path="/s/edit-profile" component={StdProfile} />
+        <Route exact path="/s/account-info" component={StdAccount} />
+        <Route exact path="/s/my-subjects" component={StdSubjects} />
+
+
+
       </Switch>
     </>
   );
